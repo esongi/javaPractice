@@ -13,7 +13,7 @@ public class Test1 {
 			if (n % i == 0) {
 				answer += i;
 
-			}
+			} 
 		}
 		return answer + n;
 	}
