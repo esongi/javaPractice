@@ -25,6 +25,9 @@ build/
 # 이클립스에서 프로젝트의 소스 디렉토리나 빌드 디렉토리, CLASSPATH 정보를 설정하는 파일
 .classpath
 
+# 이클립스에서 metadata 정보
+.metadata
+
 # 이클립스에서 프로젝트 정보를 두는 파일
 .project
 
