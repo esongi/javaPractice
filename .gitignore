@@ -28,6 +28,8 @@ build/
 # 이클립스에서 metadata 정보
 .metadata
 
+.recommenders
+
 # 이클립스에서 프로젝트 정보를 두는 파일
 .project
 
