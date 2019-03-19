@@ -44,5 +44,31 @@ boolean remove(Object o) // 주어진 객체를 삭제
 ## ArrayList
 - 저장 용량(capacity)  
 초기 용량: 10(따로 지정 가능)  
-저장 용량을 초과한 객체들이 들어오면 자동적으로 늘어남. 고정도 가능
+저장 용량을 초과한 객체들이 들어오면 자동적으로 늘어남. 고정도 가능  
+
+- 객체 제거  
+바로 뒤 인덱스부터 마지막 인덱스까지 모두 앞으로 1씩 당겨짐  
+
+- Arrays.asList()는 Arrays의 private 정적 클래스인 ArrayList를 리턴  
+asList()로 List를 생성하면 원소를 새롭게 추가할 수 없음  
+- List는 내부 구조가 배열로 만들어져 있다. 따라서 asList()를 사용해서 반환되는 List도 배열을 갖게 된다  
+이때, asList()를 사용해서 List 객체를 만들 때 새로운 배열 객체를 만드는 것이 아니라, 원본 배열의 주소값을 가져오게 된다.  
+따라서 asList()를 사용해서 내용을 수정하면 원본 배열도 함께 바뀌게 되고 원본 배열을 수정하면 그 배열로 만들어뒀던 asList()를 이용한 List 내용도 바뀌게 된다.  
+이러한 이유 때문에 Arrays.asList()로 만든 List에 새로운 원소를 추가하거나 삭제 할 수 없다.  
+따라서 Arrays.asList()는 배열의 내용을 수정하려고 할 때 List로 바꿔서 편리하게 사용하기 위함.  
+
+## Vector  
+List<E> list = new Vector<E>();
+
+- 특징  
+Vector는 스레드 동기화(synchronization)  
+복수의 스레드가 동시에 Vector에 접근해 객체를 추가, 삭제하더라도 스레드에 안전  
+
+## LinkedList  
+List<E> list = new LinkedList<E>();  
+
+- 특징  
+인접 참조를 링크해서 체인처럼 관리  
+특정 인덱스에서 객체를 제거하거나 추가하게 되면 바로 앞뒤 링크만 변경  
+빈번한 객체 삭제와 삽입이 일어나는 곳에서는 ArrayList보다 좋은 성능  
 
