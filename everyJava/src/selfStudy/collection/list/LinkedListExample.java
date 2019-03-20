@@ -1,4 +1,4 @@
-package selfStudy.collection;
+package selfStudy.collection.list;
 
 import java.util.ArrayList;
 import java.util.List;

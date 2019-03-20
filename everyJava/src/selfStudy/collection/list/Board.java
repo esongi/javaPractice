@@ -1,4 +1,4 @@
-package selfStudy.collection;
+package selfStudy.collection.list;
 
 public class Board {
 	String subject;

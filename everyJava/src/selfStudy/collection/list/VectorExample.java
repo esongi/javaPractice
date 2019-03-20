@@ -1,4 +1,4 @@
-package selfStudy.collection;
+package selfStudy.collection.list;
 
 import java.util.List;
 import java.util.Vector;
